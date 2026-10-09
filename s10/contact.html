@@ -1,0 +1,126 @@
+<!--
+    Centria Edu - Basics of Web Development
+
+    Original author: Ville Heikkiniemi
+    Modified by: Student Name
+    Last modified: 2026-08-11
+
+    Based on the original course template.
+
+    https://en1emi.github.io/WebKehitysKop26/s10/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Heikkiniemi">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Centria Edu | Basics of Web Development</title>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="topics" id="contact">
+            <div class="container">
+
+                <h2>Contact Us</h2>
+
+                <form class="card" action="https://httpbin.org/post" method="post">
+
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="telephone">Telephone:</label>
+                        <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contactmethod">Preferred Contact Method:</label>
+                        <input type="radio" id="contactmethod_email" name="contactmethod" value="email" checked>
+                        <label for="contactmethod_email">Email</label>
+                        <input type="radio" id="contactmethod_phone" name="contactmethod" value="phone">
+                        <label for="contactmethod_phone">Phone</label>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message:</label>
+                        <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        required>
+                        </textarea>
+                    </div>
+
+                    <button type="submit">Send</button>
+                </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Centria Edu</p>
+        </div>
+    </footer>
+
+</body>
+</html>
