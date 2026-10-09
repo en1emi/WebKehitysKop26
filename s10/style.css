@@ -193,6 +193,40 @@ footer {
     max-width: 500px;
 }
 
+.contact-method {
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-label {
+    font-weight: bold;
+    width: 100px;
+    flex-shrink: 0;
+    overflow-wrap: break-word;
+}
+
+contact-label {
+    width: 100px;
+    overflow-wrap: break-word;
+}
+
+.contact-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.contact-option input {
+    accent-color: #263f6a;
+    width: 16px;
+    height: 16px;
+}
+
 .form-row {
     display: flex;
     align-items: center;
