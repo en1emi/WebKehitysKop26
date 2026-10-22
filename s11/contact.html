@@ -1,0 +1,159 @@
+<!--
+    Centria Edu - Basics of Web Development
+
+    Original author: Ville Heikkiniemi
+    Modified by: Student Name
+    Last modified: 2026-08-11
+
+    Based on the original course template.
+
+    https://en1emi.github.io/WebKehitysKop26/s10/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ville Heikkiniemi">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Centria Edu | Basics of Web Development</title>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    centria <span>edu</span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="topics" id="contact">
+            <div class="container">
+
+                <h2>Contact Us</h2>
+
+                <form class="card" action="https://httpbin.org/post" method="post">
+
+                    <div class="form-row">
+                        <label for="name">Name: * (2-80 characters)</label>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        autocomplete="name"
+                        required
+                        minlength="2"
+                        maxlength="80"
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email: * (max. 120 characters)</label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        autocomplete="email"
+                        required
+                        maxlength="120"
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="telephone">Telephone: (optional)</label>
+                        <p id="telephone-help">
+                        Enter 7–15 digits, optionally starting with +.
+                        Do not use spaces or hyphens. Example: +358401234567.
+                        </p>
+                        <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        autocomplete="tel"
+                        pattern="[+]?[0-9]{7,15}"
+                        aria-describedby="telephone-help"
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="subject">Subject: *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <fieldset class="contact-fieldset">
+                        <legend>Preferred contact method: *</legend>
+
+                        <input
+                            type="radio"
+                            id="contact-email"
+                            name="contact_method"
+                            value="email"
+                            required
+                        >
+                        <label for="contact-email">Email</label>
+
+                        <input
+                            type="radio"
+                            id="contact-phone"
+                            name="contact_method"
+                            value="phone"
+                            required
+                        >
+                        <label for="contact-phone">Phone</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message: * (20-1000 characters)</label>
+                        <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        autocomplete="off"
+                        minlength="20"
+                        maxlength="1000"
+                        required>
+                        </textarea>
+                    </div>
+
+                    <button type="submit">Send</button>
+                </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Centria Edu</p>
+        </div>
+    </footer>
+
+</body>
+</html>
