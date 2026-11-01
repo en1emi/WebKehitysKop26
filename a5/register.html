@@ -1,0 +1,133 @@
+<!--
+    Edited by: Emmi Niemi
+
+    https://en1emi.github.io/WebKehitysKot/a5/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Pöön kotisivut</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span>Pöön kotisivut</span>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Koti</a></li>
+                    <li><a href="gallery.html">Galleria</a></li>
+                    <li><a href="register.html" class="active">Rekistöröityminen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+
+                    <h1> Rekistöröitymislomake</h1>
+
+                    <p>Haluatko liittyä Pöön faniyhteisöön ja keskustella hänen kanssaan kuin kasvotusten, ihmisten lailla?</p>
+                    <p>Täyttämällä alla olevan lomakkeen, pääset mukaan meidän yhteisöön. Saat mm. oikeudet kommentoida päivityksiä.</p>
+                    <p>Käyttöehdot: </p>
+                    <p>1. Kunnioitat muita käyttäjiä. Minkäänlaista kiusaamista tms. ei sallita.</p>
+                    <p>2. Vastaat itse julkaisemistasi sisällöistä ja kommenteista.</p>
+                    <p>3. Sivuston ylläpitäjä voi poistaa tai muokata sisältöä.</p>
+                    <p>4. Rekistöröitymisen yhteydessä annettuja tietoja käytetään käyttäjätilin ylläpitämiseen ja sivuston ilmoitusten lähettämiseen.</p>
+                    
+                    <form class="card registration-form" action="https://httpbin.org/post" method="post">
+                        <div class="form-row">
+                            <label for="name">Nimi: *</label>
+                            <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            autocomplete="name"
+                            required
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Sähköposti: *</label>
+                            <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            autocomplete="email"
+                            required
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <label for="username">Käyttäjänimi (min. 3 merkkiä): *</label>
+                            <input 
+                            type="text" 
+                            id="username" 
+                            name="username" 
+                            autocomplete="username"
+                            required
+                            minlength="3"
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <label for="password">Salasana (min. 8 merkkiä): *</label>
+                            <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            autocomplete="new-password"
+                            required
+                            minlength="8"
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <label for="subject">Käyttäjätyyppi: *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Valitse..</option>
+                                <option value="general">1 kk tilaus</option>
+                                <option value="support">6 kk tilaus</option>
+                                <option value="feedback">Ikuinen</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <label class="terms-option">
+                                <input 
+                                type="checkbox"  
+                                name="terms" 
+                                required
+                                >
+                                Hyväksyn käyttöehdot *
+                            </label>
+                        </div>
+
+                        <button type="submit">Rekistöröidy</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pöö. Kaikki oikeudet pidätetään.</p>
+    </footer>

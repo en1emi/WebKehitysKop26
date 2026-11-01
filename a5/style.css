@@ -1,0 +1,191 @@
+/* perus tyylit */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f7f2;
+    color: #1f2d1f;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2e6b3a;
+    color: white;
+    padding: 20px 0;
+}
+
+nav {
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+nav ul li a {
+    font-family: "Great Vibes", cursive;
+    color: #b7d8b9;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.logo span {
+    color: #b7d8b9;
+}
+
+.hero {
+    padding: 60px 0;
+    background-color: #dfeee0;
+}
+
+.topics {
+    background-color: #dfeee0;
+    padding: 40px 0;
+}
+
+.topics h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #24552e;
+}
+
+.hero-content h1 {
+    text-align: center;
+    color: #24552e;
+    font-size: 42px;
+}
+
+.hero-content p {
+    text-align: center;
+    font-style: italic;
+    color: #2e6b3a;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+.hero-content img {
+    display: block;
+    margin: 20px auto;
+    width: 450px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Rekisteröitymislomake */
+.registration-form {
+    max-width: 600px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #f1f7ef;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+.registration-form .form-row {
+    margin-bottom: 18px;
+}
+
+.registration-form label {
+    display: block;
+    color: #284e36;
+    font-size: 17px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.registration-form input, .registration-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #b5cbb5;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 13px;
+    background-color: #284e36;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #3d704b;
+}
+
+.registration-form .terms-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registration-form .terms-option input {
+    width: 18px;
+    height: 18px;
+    accent-color: #284e36;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
